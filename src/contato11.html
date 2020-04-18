@@ -1,24 +1,28 @@
- <html>
-<head>
-<title>Random Backs</title>
-<HEAD>
-</HEAD>
-<script language="JavaScript">
-var theImages = new Array();
-theImages[0] = '/imagens_portal/capela/capela1.png'
-theImages[1] = '/imagens_portal/capela/capela2.png'theImages[2] = '3.gif'
-theImages[3] = '4.gif'
-//    and so on...
+<html>
 
-var j = 0
-var p = theImages.length;
-var preBuffer = new Array()
-for (i = 0; i < p; i++){
-  preBuffer = new Image()
-  preBuffer.src = theImages
-}
-var whichImage = Math.round(Math.random()*(p-1));
-document.write('<body background="'+theImages[whichImage]+'">');
-</script>
-</body>
-</html> 
+<head>
+  <title>Random Backs</title>
+
+  <HEAD>
+  </HEAD>
+  <script language="JavaScript">
+    var theImages = new Array();
+    theImages[0] = '/imagens_portal/capela/capela1.png'
+    theImages[1] = '/imagens_portal/capela/capela2.png'
+    theImages[2] = '3.gif'
+    theImages[3] = '4.gif'
+    //    and so on...
+
+    var j = 0
+    var p = theImages.length;
+    var preBuffer = new Array()
+    for (i = 0; i < p; i++) {
+      preBuffer = new Image()
+      preBuffer.src = theImages
+    }
+    var whichImage = Math.round(Math.random() * (p - 1));
+    document.write('<body background="' + theImages[whichImage] + '">');
+  </script>
+  </body>
+
+</html>
