@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+  	 <title>anastacio</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/compiler/bootstrap.css">
+     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/popper/dist/umd/popper.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.2/wavesurfer.min.js"></script>
+
+   
+  </head>
+  <body>
+
+<div id="noise">
+<div id="abalo_fundo">
+
+  	</br>
+  	</br>
+
+
+
+    <nav class="navbar navbar-expand-md navbar-light bg-white">
+
+    	<div class="mx-auto" style="width: 480px;">
+
+
+    	<div class="collapse navbar-collapse" id="navbarSite">
+
+    		<ul class="navbar-nav">
+
+    			
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">//anastacio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="bio.html">//bio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navDrop" href="#">//projetos</a>
+            <div class="dropdown-menu">
+              <a href="voz.html" class="dropdown-item">Voz da Terra</a>
+              <a href="logique.html" class="dropdown-item">Logique du Fantasme</a>
+              <a href="quanta.html" class="dropdown-item">Quanta</a>
+              <a href="volume.html" class="dropdown-item">Volume</a>
+              <a href="" class="dropdown-item">Crioula Reinado</a>
+              <a href="simbinoise.html" class="dropdown-item">Simbinoise</a>
+              <a href="baia.html" class="dropdown-item">Triste Baia</a>
+              <a href="trilha.html" class="dropdown-item">Trilha de Sumé</a>
+              <a href="capela.html" class="dropdown-item">Capela</a>
+              <a href="abalo.html" class="dropdown-item">Abalo Sísmico</a>
+              <a href="concreto.html" class="dropdown-item">Concreto comum</a>
+              <a href="ritos.html" class="dropdown-item">Ritos com o Mar</a>
+              <a href="uoco.html" class="dropdown-item">Uoco</a>
+              <a href="banco.html" class="dropdown-item">Banco de dados</a>
+              <a href="mariri.html" class="dropdown-item">Mariri</a>
+              <a href="oficina.html" class="dropdown-item">Oficinas</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contato.html">//contato</a>
+          </li>
+    		</ul>
+    	</div>
+    </div>
+
+
+    	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+    		<span class="navbar-toggler-icon"></span>
+
+    	</button>
+    </nav>
+
+
+    </br>
+    </br>
+
+    <h2 id="banco">Banco de Dados: contos da rua</h2>
+ </br>
+    </br>
+    <p>  
+
+Autores:André Anastácio, Caio Chacal, Carlos Meijueiro e Vitor Zanon
+Formatos: Paisagem Sonora de 8 canais com esculturas de concreto.
+Duração: 45”
+Ano: 2018
+
+ </p><p>
+Buscando materializar o invisível por meio de uma escuta que exercita a cidadania, “Banco de dados” torna audíveis leituras da cidade por meio da voz e da vivência de pessoas em situação de rua no Rio de Janeiro. Esta incursão nas ruas para exercitar uma escuta afetiva, proporcionou uma coleta de histórias de vida, um retrato social que possui camadas sensíveis que complementam dados quantitativos como a “taxa de desalentados”, índice que passou a integrar em 2018 as estatísticas do IBGE. A obra investiga a dinâmica da geografia humana nos centros urbanos, segundo a perspectiva de quem precisou habitar a rua. Amplificar e valorizar essas vozes em uma paisagem sonora, se apresenta como tentativa de provocar uma reflexão sobre o desalento nos centros urbanos. 
+
+
+
+ </p><p>
+
+projeto realizado no contexto do Festival Multiverso, comissionado pelo Oi Futuro.
+</p>
+
+
+
+</br>
+    </br>
+
+<img id="banco" src="../imagens_portal/banco/fotos1.jpg" height="500" width="680">
+
+ </br>
+
+<img id="banco" src="../imagens_portal/banco/fotos22.gif" alt=”animated” height="500" width="680">
+
+</br>
+</br>
+
+
+ <div id="waveform">
+  
+  <div class="header">
+                <ul class="nav nav-pills pull-right">
+                    <li><a href="/"><i class="glyphicon glyphicon-home"></i></a></li>
+                </ul>
+
+       
+            </div>
+
+            <div id="demo">
+                <div class="row" style="margin: 30px 0">
+                    <div class="col-sm-10">
+                        <div id="waveform">
+                            Here be waveform 
+                        </div>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <button class="btn btn-success btn-block" id="playPause">
+                            <span id="play">
+                                <i class="glyphicon glyphicon-play"></i>
+                                Play
+                            </span>
+
+                            <span id="pause" style="display: none">
+                                <i class="glyphicon glyphicon-pause"></i>
+                                Pause
+                            </span>
+                        </button>
+                    </div>
+                </div> 
+
+
+
+ </div>
+
+
+ <!--
+
+<div class="container">
+            <div class="header">
+                <ul class="nav nav-pills pull-right">
+                    <li><a href="/"><i class="glyphicon glyphicon-home"></i></a></li>
+                </ul>
+
+       
+            </div>
+
+            <div id="demo">
+                <div class="row" style="margin: 30px 0">
+                    <div class="col-sm-10">
+                        <div id="waveform">
+                            Here be waveform 
+                        </div>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <button class="btn btn-success btn-block" id="playPause">
+                            <span id="play">
+                                <i class="glyphicon glyphicon-play"></i>
+                                Play
+                            </span>
+
+                            <span id="pause" style="display: none">
+                                <i class="glyphicon glyphicon-pause"></i>
+                                Pause
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="" id="playlist">
+                    <a href="https://wavesurfer-js.org/example/media/demo.wav" class="">
+                        agrupamento dos 8 canais da paisagem sonora 
+                    </a>
+                </div>
+                
+                  
+                </div>
+            </div>
+           
+
+--> 
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+
+  var wavesurfer = WaveSurfer.create({
+    container: '#waveform',
+    waveColor: 'violet',
+    progressColor: 'purple'
+});
+
+  wavesurfer.load('../imagens_portal/banco/banco.mp3');
+  
+
+  var wavesurfer = Object.create(WaveSurfer);
+
+
+// Init on DOM ready
+document.addEventListener('DOMContentLoaded', function () {
+    wavesurfer.init({
+        container: '#waveform',
+        waveColor: '#428bca',
+        progressColor: '#31708f',
+        height: 120,
+        barWidth: 3
+    });
+});
+
+
+// Bind controls
+document.addEventListener('DOMContentLoaded', function () {
+    var playPause = document.querySelector('#playPause');
+    playPause.addEventListener('click', function () {
+        wavesurfer.playPause();
+    });
+
+    // Toggle play/pause text
+    wavesurfer.on('play', function () {
+        document.querySelector('#play').style.display = 'none';
+        document.querySelector('#pause').style.display = '';
+    });
+    wavesurfer.on('pause', function () {
+        document.querySelector('#play').style.display = '';
+        document.querySelector('#pause').style.display = 'none';
+    });
+
+
+    // The playlist links
+    var links = document.querySelectorAll('#playlist a');
+    var currentTrack = 0;
+
+    // Load a track by index and highlight the corresponding link
+    var setCurrentSong = function (index) {
+        links[currentTrack].classList.remove('active');
+        currentTrack = index;
+        links[currentTrack].classList.add('active');
+        wavesurfer.load(links[currentTrack].href);
+    };
+
+    // Load the track on click
+    Array.prototype.forEach.call(links, function (link, index) {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            setCurrentSong(index);
+        });
+    });
+
+    // Play on audio load
+    //wavesurfer.on('ready', function () {
+    //    wavesurfer.play();
+    //});
+
+    // Go to the next track on finish
+    wavesurfer.on('finish', function () {
+        setCurrentSong((currentTrack + 1) % links.length);
+    });
+
+    // Load the first track
+    setCurrentSong(currentTrack);
+});
+</script>
+
+<style>
+
+div#abalo_fundo {
+ background-color: rgba(235, 235, 235, .8);
+  width: 800px;
+  margin-top: 50px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+div#noise{
+  background: url("../imagens_portal/banco/fundo.jpg");
+   background-size: width="10";
+  width: 960px;
+  margin-top: 50px;
+  margin-left: 235px;
+  margin-right: 400px;
+ 
+ 
+}
+
+
+p {
+
+  font-family: "Andale Mono";
+  font-size: 16px;
+  text-align: justify;
+  text-justify: inter-word;
+  width: 1120px;
+  height: 400px
+  line-height: 2;
+   margin-left: 0px;
+  margin-right:0px;
+  padding-top: 40px;
+  color: rgba(21, 21, 21, 0.9);
+
+
+}
+
+h2#abalo  {
+ padding-left: 40px;
+  font-family: "Andale Mono";
+  font-size: 18px;
+   padding-top: 80px;
+  color: rgba(21, 21, 21, 0.9);
+
+}
+
+iframe#abalo{
+
+margin-left: 20px;
+  margin-right: 300px;
+ border: 4px rgba(255, 255, 255, 0.2);
+  box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.4);;
+
+}
+
+img#banco{
+
+margin-left: 60px;
+  margin-right: 300px;
+
+border: 4px rgba(255, 255, 255, 0.2);
+ 
+  box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.4);
+
+
+}
+
+div#abalo_texto {
+
+ margin-left: 100px;
+  margin-right: 100px;
+
+border: 4px rgba(255, 255, 255, 0.2);
+
+  box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.4);
+  
+
+
+}
+
+
+</style>
+
+
+ </body>
+
+
+</html>
